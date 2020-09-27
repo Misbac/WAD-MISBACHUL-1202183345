@@ -1,0 +1,31 @@
+#kanan{
+    text-align: right;
+}
+#buton{
+    background-color: blue;
+}
+.btn btn-primary btn-sm{
+    background-color: chartreuse;
+}
+#logo{
+    text-align: center;
+}
+
+}
+#brg{
+    text-align: center;
+}
+#atas{
+    text-align: start;
+}
+td {
+    padding: 15px;
+}
+
+.container {
+    align-content: center;
+}
+
+.video {
+    padding-top: 75px;
+}
