@@ -75,7 +75,7 @@
                                 } else {
                                     $roomType = $_GET['room'];
                                     $stat = is_null($roomType);
-                                    if ($stat != 1) {
+                                    if ($stat = 1) {
                                         echo '
                                         
                                 <input readonly name="roomList" type="text" class="form-control disabled"  id="roomList"  value="' . $roomType . '" required>';
