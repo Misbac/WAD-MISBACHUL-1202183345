@@ -17,12 +17,12 @@
      $sizeGambar = $_FILES['gambar']['size'];
      $pathInfo = pathinfo($namaGambar, PATHINFO_EXTENSION);
 
-     if(!in_array($pathInfo, $ekstensi)){
+     if(!in_aray($pathInfo, $ekstensi)){
           header('location:home.php?alert=gagal_ekstensi');
      }else{
 
           $path = $random.'_'.$namaGambar;
-     move_uploaded_file($_FILES['gambar']['tmp_name'], 'asset/'.$random.'_'.$namaGambar);
+     move_uploaded_file($FILES['gambar']['tmp_name'], 'asset/'.$random.'_'.$namaGambar);
 
      $postEvent = mysqli_query($connect, "INSERT INTO event_table VALUES ('', '$nama', '$deskripsi', '$path', '$kategori', '$tanggal', '$mulai', '$berakhir', '$tempat', '$harga', '$benefit')");
 

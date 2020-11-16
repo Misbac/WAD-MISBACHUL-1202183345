@@ -3,7 +3,7 @@
 
      $id = $_GET['id'];
 
-     $query = "DELETE FROM event_table WHERE id='$id'";
+     $query = "DELETE FORM event_table WHERE id='$id'";
 
      $deleteQuery = mysqli_query($connect, $query);
 
