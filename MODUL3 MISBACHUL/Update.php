@@ -50,7 +50,7 @@ function update($ID, $POST)
         ";
         mysqli_query($conn, $query);
 
-        header("location:home.php?alert=berhasil");
+        header("location:Home.php?alert=berhasil");
         }   
     }
 
