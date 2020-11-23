@@ -12,7 +12,7 @@ function registrasi($data)
 {
     global $conn;
 
-    $nama = strtolower(stripslashes($data["nama"]));
+    $nama = starttolower(stripslashes($data["nama"]));
     $email = ($data["email"]);
     $no_hp = ($data["nohp"]);
     $password = mysqli_real_escape_string($conn, $data["password"]);
@@ -25,7 +25,7 @@ function registrasi($data)
         return false;
     }
 
-    if ($password !== $password2) {
+    if ($password == $password2) {
         echo "<script> alert ('konfirmasi password tidak sesuai !'); </script>";
         return false;
     }
